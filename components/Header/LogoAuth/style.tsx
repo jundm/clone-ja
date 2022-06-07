@@ -122,4 +122,15 @@ export const Menu_icon_span = styled.span`
   text-indent: -9999px;
   height: 30px;
   display: block;
+  color: #919191;
+`;
+
+export const Menu_icon_a = styled.a`
+  color: #919191;
+  border-left: none;
+  line-height: 1;
+  text-align: center;
+  :hover {
+    color: #9c57f5;
+  }
 `;

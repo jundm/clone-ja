@@ -24,6 +24,15 @@ export const Gnb_1dli_li = styled.li`
   position: relative;
   text-align: center;
   width: 100px;
+  :hover {
+    color: #9c57f5;
+  }
+`;
+export const AI_image_li = styled(Gnb_1dli_li)`
+  background: url("assets/headers/links/ai.webp") no-repeat 20px 25px;
+  :hover {
+    background: url("assets/headers/links/ai_ov.webp") no-repeat 20px 0px;
+  }
 `;
 export const Gnb_menu_btn_button = styled.button`
   width: 65px;

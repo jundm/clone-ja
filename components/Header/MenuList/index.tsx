@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import {
+  AI_image_li,
   Gnb_1da_a,
   Gnb_1dli_li,
   Gnb_1dul_ul,
@@ -13,6 +14,9 @@ import GNB from "@public/assets/headers/links/gnb.webp";
 interface MenuListProps {}
 
 function MenuList({}: MenuListProps) {
+  const [info, setinfo] = useState(false);
+  const [talk, setTalk] = useState(false);
+  const [AI, setAI] = useState(false);
   return (
     <>
       <Hd_wrapper_div>
@@ -39,14 +43,38 @@ function MenuList({}: MenuListProps) {
                   어학/공무원
                 </a>
               </Gnb_1dli_li>
-              <Gnb_1dli_li>
+              <Gnb_1dli_li
+                onMouseEnter={() => {
+                  setinfo(true);
+                }}
+                onMouseLeave={() => {
+                  setinfo(false);
+                }}
+                style={{
+                  background: `url('assets/headers/links/${
+                    info ? "gnbInfo.webp" : ""
+                  }') no-repeat center 16px`,
+                }}
+              >
                 <a href="/jnTops/" className="gnb_1da">
-                  자넷info
+                  {info ? "" : "자넷info"}
                 </a>
               </Gnb_1dli_li>
-              <Gnb_1dli_li>
+              <Gnb_1dli_li
+                onMouseEnter={() => {
+                  setTalk(true);
+                }}
+                onMouseLeave={() => {
+                  setTalk(false);
+                }}
+                style={{
+                  background: `url('assets/headers/links/${
+                    talk ? "gnbTalk.webp" : ""
+                  }') no-repeat center 16px`,
+                }}
+              >
                 <a href="/jnTops/" className="gnb_1da">
-                  자넷톡
+                  {talk ? "" : "자넷톡"}
                 </a>
               </Gnb_1dli_li>
             </Gnb_1dul_ul>
@@ -73,17 +101,11 @@ function MenuList({}: MenuListProps) {
                   커뮤니티
                 </Gnb_1da_a>
               </Gnb_1dli_li>
-              <Gnb_1dli_li>
-                <Gnb_1da_a
-                  href="https://janet.co.kr/jnTown/"
-                  style={{
-                    background:
-                      "url('assets/headers/links/ai.webp') no-repeat 18px 25px;",
-                  }}
-                >
+              <AI_image_li>
+                <Gnb_1da_a href="https://janet.co.kr/jnTown/">
                   자격증AI
                 </Gnb_1da_a>
-              </Gnb_1dli_li>
+              </AI_image_li>
             </ul>
           </Gnb_wrap_div>
         </nav>
@@ -93,3 +115,8 @@ function MenuList({}: MenuListProps) {
 }
 
 export default MenuList;
+// style={{
+//   background: `url('assets/headers/links/${
+//     AI ? "ai.webp" : "ai_ov.webp"
+//   }') no-repeat 18px 25px;`,
+// }}

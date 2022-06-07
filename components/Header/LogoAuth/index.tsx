@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import {
   Tnb_div,
   Hd_login_ul,
@@ -15,14 +15,19 @@ import {
   Login_wr_ul,
   Login_wr_li,
   Menu_icon_span,
+  Menu_icon_a,
 } from "./style";
 import logo from "@public/assets/headers/logo/logo.webp";
 import search from "@public/assets/headers/logo/mainSrchBtn.webp";
-import styled from "@emotion/styled";
+
 interface LogoAuthProps {}
 
 function LogoAuth({}: LogoAuthProps) {
   const [width, setWidth] = useState(400);
+  const [signup, setSignup] = useState(false);
+  const [login, setLogin] = useState(false);
+  const [company, setCompany] = useState(false);
+
   return (
     <>
       <Tnb_div>
@@ -53,7 +58,7 @@ function LogoAuth({}: LogoAuthProps) {
                     onClick={() => setWidth(650)}
                   />
                   <Sch_submit_button type="submit">
-                    <Image src={search} width={30} height={30} />
+                    <Image src={search} width={30} height={30} alt="" />
                   </Sch_submit_button>
                 </Hd_sch_fieldset>
               </form>
@@ -61,38 +66,64 @@ function LogoAuth({}: LogoAuthProps) {
           </Hd_login_li>
           <Login_wr_ul>
             <Login_wr_li>
-              <a href="https://janet.co.kr/member/register.php">
+              <Menu_icon_a
+                href="https://janet.co.kr/member/register.php"
+                onMouseEnter={() => {
+                  setSignup(true);
+                }}
+                onMouseLeave={() => {
+                  setSignup(false);
+                }}
+              >
                 <Menu_icon_span
-                  //TODO 호버 추가
                   style={{
-                    background:
-                      "url('assets/headers/auth/member.webp') no-repeat center 3px",
+                    background: `url('assets/headers/auth/${
+                      signup ? "member_ov.webp" : "member.webp"
+                    }') no-repeat center 3px`,
                   }}
                 />
                 회원가입
-              </a>
+              </Menu_icon_a>
             </Login_wr_li>
             <Login_wr_li>
-              <a href="https://janet.co.kr/member/login">
+              <Menu_icon_a
+                href="https://janet.co.kr/member/login"
+                onMouseEnter={() => {
+                  setLogin(true);
+                }}
+                onMouseLeave={() => {
+                  setLogin(false);
+                }}
+              >
                 <Menu_icon_span
                   style={{
-                    background:
-                      "url('assets/headers/auth/login.webp') no-repeat center 3px",
+                    background: `url('assets/headers/auth/${
+                      login ? "login_ov.webp" : "login.webp"
+                    }') no-repeat center 3px`,
                   }}
                 />
                 로그인
-              </a>
+              </Menu_icon_a>
             </Login_wr_li>
             <Login_wr_li>
-              <a href="https://support.janet.co.kr/">
+              <Menu_icon_a
+                href="https://support.janet.co.kr/"
+                onMouseEnter={() => {
+                  setCompany(true);
+                }}
+                onMouseLeave={() => {
+                  setCompany(false);
+                }}
+              >
                 <Menu_icon_span
                   style={{
-                    background:
-                      "url('assets/headers/auth/company.webp') no-repeat center 3px",
+                    background: `url('assets/headers/auth/${
+                      company ? "company_ov.webp" : "company.webp"
+                    }') no-repeat center 3px`,
                   }}
                 />
                 기업서비스
-              </a>
+              </Menu_icon_a>
             </Login_wr_li>
           </Login_wr_ul>
         </Hd_login_ul>
