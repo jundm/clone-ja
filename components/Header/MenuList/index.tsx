@@ -43,17 +43,17 @@ function MenuList({}: MenuListProps) {
                 </Gnb_menu_btn_button>
               </li>
               <Gnb_1dli_li>
-                <a href="/jnTops/" className="gnb_1da">
+                <a href="https://janet.co.kr/jnTops/" className="gnb_1da">
                   Top100
                 </a>
               </Gnb_1dli_li>
               <Gnb_1dli_li>
-                <a href="/jnTops/" className="gnb_1da">
+                <a href="https://janet.co.kr/jnLics/" className="gnb_1da">
                   자격증정보
                 </a>
               </Gnb_1dli_li>
               <Gnb_1dli_li>
-                <a href="/jnTops/" className="gnb_1da">
+                <a href="https://janet.co.kr/jnLnPo/" className="gnb_1da">
                   어학/공무원
                 </a>
               </Gnb_1dli_li>
@@ -70,7 +70,10 @@ function MenuList({}: MenuListProps) {
                   }') no-repeat center 16px`,
                 }}
               >
-                <a href="/jnTops/" className="gnb_1da">
+                <a
+                  href="https://janet.co.kr/bbs/board.php?bo_table=bNews"
+                  className="gnb_1da"
+                >
                   {info ? "" : "자넷info"}
                 </a>
               </Gnb_1dli_li>
@@ -87,7 +90,10 @@ function MenuList({}: MenuListProps) {
                   }') no-repeat center 16px`,
                 }}
               >
-                <a href="/jnTops/" className="gnb_1da">
+                <a
+                  href="https://janet.co.kr/jnTalk/index.php"
+                  className="gnb_1da"
+                >
                   {talk ? "" : "자넷톡"}
                 </a>
               </Gnb_1dli_li>
@@ -106,7 +112,7 @@ function MenuList({}: MenuListProps) {
               </Gnb_1dli_li>
               <Gnb_1dli_li>
                 <Gnb_1da_a
-                  href="https://janet.co.kr/jnTown/"
+                  href="https://janet.co.kr/jnComm/"
                   style={{
                     background:
                       "url('assets/headers/links/commu.webp') no-repeat 30px 14px;",
@@ -116,7 +122,7 @@ function MenuList({}: MenuListProps) {
                 </Gnb_1da_a>
               </Gnb_1dli_li>
               <AI_image_li>
-                <Gnb_1da_a href="https://janet.co.kr/jnTown/">
+                <Gnb_1da_a href="https://janet.co.kr/jnRcmd/jnRcmd_test.php">
                   자격증AI
                 </Gnb_1da_a>
               </AI_image_li>
