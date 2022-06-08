@@ -52,25 +52,3 @@ export const Gnb_1da_a = styled.a`
   width: 100px;
   display: block;
 `;
-
-export const divdiv1 = styled.div``;
-export const d2iv3div = styled.div``;
-export const div3d4iv = styled.div``;
-
-export const di4vdiv = styled.div``;
-export const di5v3div = styled.div``;
-export const divd43iv = styled.div``;
-
-export const di1vdiv = styled.div``;
-export const div23div = styled.div``;
-export const div3d24iv = styled.div``;
-
-export const d1i4vdiv = styled.div``;
-export const di5v3di2v = styled.div``;
-export const div1d4iv = styled.div``;
-
-export const div2div = styled.div``;
-export const div33div = styled.div``;
-export const divd44iv = styled.div``;
-
-export const divdiv = styled.div``;
