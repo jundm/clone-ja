@@ -1,3 +1,3 @@
 import { atom } from "jotai";
 
-export const numAtom = atom({ width: 400 });
+export const heightAtom = atom({ toggle: false });

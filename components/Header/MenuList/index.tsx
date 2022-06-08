@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import {
   AI_image_li,
@@ -10,13 +10,21 @@ import {
   Hd_wrapper_div,
 } from "./style";
 import GNB from "@public/assets/headers/links/gnb.webp";
+import { useAtom } from "jotai";
+import { heightAtom } from "util/inputAtom";
 
 interface MenuListProps {}
 
 function MenuList({}: MenuListProps) {
   const [info, setinfo] = useState(false);
   const [talk, setTalk] = useState(false);
-  const [AI, setAI] = useState(false);
+  const [, isHeight] = useAtom(heightAtom);
+  const [boolean, setBoolean] = useState(false);
+  useEffect(() => {
+    isHeight({
+      toggle: boolean,
+    });
+  }, [boolean]);
   return (
     <>
       <Hd_wrapper_div>
@@ -24,7 +32,13 @@ function MenuList({}: MenuListProps) {
           <Gnb_wrap_div>
             <Gnb_1dul_ul>
               <li>
-                <Gnb_menu_btn_button type="button" title="전체메뉴">
+                <Gnb_menu_btn_button
+                  type="button"
+                  title="전체메뉴"
+                  onClick={() => {
+                    setBoolean(!boolean);
+                  }}
+                >
                   <Image src={GNB} alt="" />
                 </Gnb_menu_btn_button>
               </li>
@@ -115,8 +129,3 @@ function MenuList({}: MenuListProps) {
 }
 
 export default MenuList;
-// style={{
-//   background: `url('assets/headers/links/${
-//     AI ? "ai.webp" : "ai_ov.webp"
-//   }') no-repeat 18px 25px;`,
-// }}
