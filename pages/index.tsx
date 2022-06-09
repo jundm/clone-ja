@@ -1,3 +1,4 @@
+import TopSection from "@components/TopSection";
 import HiddenMenu from "@components/Header/HiddenMenu";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -9,7 +10,7 @@ const Home: NextPage = () => {
     <>
       <Header />
       <HiddenMenu />
-      <div>body</div>
+      <TopSection />
     </>
   );
 };
