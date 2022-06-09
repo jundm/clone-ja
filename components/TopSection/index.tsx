@@ -1,4 +1,5 @@
 import React from "react";
+import MainChart from "./MainChart";
 import MainInfo from "./MainInfo";
 import Slide from "./Slide";
 import { ContentTop_section } from "./Slide/style";
@@ -12,6 +13,7 @@ function TopSection({}: TopSectionProps) {
         <div style={{ width: "1250px" }}>
           <Slide />
           <MainInfo />
+          <MainChart />
         </div>
       </div>
     </ContentTop_section>

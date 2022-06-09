@@ -10,7 +10,6 @@ const Home: NextPage = () => {
     <>
       <Header />
       <HiddenMenu />
-
       <TopSection />
     </>
   );
