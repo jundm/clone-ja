@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import {
   Banner_image_div,
   Fixed_button_div,
@@ -12,7 +12,7 @@ import {
   Txt_box_h3,
   Txt_box_p,
 } from "./style";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -24,7 +24,6 @@ import inCrfc from "@public/assets/banners/infomations/자격증정보/inCrfc.we
 import rCrtfc from "@public/assets/banners/infomations/자격증정보/rCrtfc.webp";
 import sCrtfc from "@public/assets/banners/infomations/자격증정보/sCrtfc.webp";
 import banner from "@public/assets/banners/infomations/d0942d969f0a37cb73a46db345ea874b.png";
-import { IconType } from "react-icons";
 import { SwiperButtonNext, SwiperButtonPrev } from "elements/SwiperButton";
 
 interface MainInfoProps {}
@@ -41,6 +40,7 @@ function MainInfo({}: MainInfoProps) {
           margin: "0 auto",
           overflow: "hidden",
           zIndex: "1",
+          position: "relative",
         }}
       >
         <Fixed_button_div>
@@ -66,7 +66,6 @@ function MainInfo({}: MainInfoProps) {
         <SwiperSlide>
           <Info_div>
             <Tit_h1>자격증 정보</Tit_h1>
-            <div></div>
           </Info_div>
           <Info_ul>
             <Info_li>

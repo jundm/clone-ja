@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 export const MainInfo_div = styled.div`
   width: 550px;
@@ -58,12 +57,14 @@ export const Txt_box_p = styled.p`
 export const Info_div = styled.div`
   display: flex;
   justify-content: space-between;
+  z-index: -1;
 `;
 export const Fixed_button_div = styled.div`
-  display: fixed;
   transform: translate(450px, -240px);
   background: white;
   border: solid 1px white;
+  z-index: 10;
+  position: absolute;
 `;
 export const Swiper_button = styled.button`
   width: 19px;
@@ -75,5 +76,4 @@ export const Swiper_button = styled.button`
 export const Banner_image_div = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: -30px;
 `;

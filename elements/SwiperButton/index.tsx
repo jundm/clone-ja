@@ -29,7 +29,6 @@ export const SwiperButtonPrev: IconType = ({ children }) => {
       style={{
         width: "19px",
         height: "19px",
-        border: "1px solid #dfdfdf",
         background: "#fff",
         cursor: "pointer",
       }}
