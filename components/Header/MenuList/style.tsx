@@ -17,7 +17,7 @@ export const Gnb_wrap_div = styled.div`
 export const Gnb_1dul_ul = styled.ul`
   display: flex;
 `;
-export const Gnb_1dli_li = styled.li`
+export const Gnb_1dul_li = styled.li`
   padding: 0 5px;
   font-size: 16px;
   font-weight: 500;
@@ -28,7 +28,17 @@ export const Gnb_1dli_li = styled.li`
     color: #9c57f5;
   }
 `;
-export const AI_image_li = styled(Gnb_1dli_li)`
+export const Gnb_Info_li = styled(Gnb_1dul_li)`
+  :hover {
+    background: url("assets/headers/links/gnbInfo.webp") no-repeat center 16px;
+  }
+`;
+export const GnbTalk_li = styled(Gnb_1dul_li)`
+  :hover {
+    background: url("assets/headers/links/gnbTalk.webp") no-repeat center 16px;
+  }
+`;
+export const AI_image_li = styled(Gnb_1dul_li)`
   background: url("assets/headers/links/ai.webp") no-repeat 20px 25px;
   :hover {
     background: url("assets/headers/links/ai_ov.webp") no-repeat 20px 0px;

@@ -13,10 +13,6 @@ import {
   Txt_box_p,
 } from "./style";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import Image from "next/image";
 import iCrtfc from "@public/assets/banners/infomations/자격증정보/iCrtfc.webp";
@@ -32,7 +28,6 @@ function MainInfo({}: MainInfoProps) {
   return (
     <MainInfo_div>
       <Swiper
-        modules={[Navigation]}
         onSlideChange={(swiper) => swiper}
         onSwiper={(swiper) => swiper}
         loop
@@ -41,6 +36,7 @@ function MainInfo({}: MainInfoProps) {
           overflow: "hidden",
           zIndex: "1",
           position: "relative",
+          marginTop: "-10px",
         }}
       >
         <Fixed_button_div>
