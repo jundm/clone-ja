@@ -41,3 +41,17 @@ export const SwiperButtonPrev: IconType = ({ children }) => {
     </Swiper_button>
   );
 };
+
+export const SwiperCustomButtonNext: IconType = ({ children }) => {
+  const swiper = useSwiper();
+  return (
+    <div
+      onClick={(e) => {
+        e.stopPropagation();
+        swiper.slideNext();
+      }}
+    >
+      {children}
+    </div>
+  );
+};

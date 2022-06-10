@@ -76,4 +76,5 @@ export const Swiper_button = styled.button`
 export const Banner_image_div = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 `;
