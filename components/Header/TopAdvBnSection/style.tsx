@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const TopAdv_Bn_section = styled.section`
   margin: 30px auto 30px;
   padding: 0 24px;
-  position: relative;
+  /* position: relative; */
 `;
 export const ASDFASDF4ASDFSGFDFGSDFGSDFGSDF = styled.div``;
 export const ASDFASDFA2SDFSGFDFGSDFGSDFGSDF = styled.div``;

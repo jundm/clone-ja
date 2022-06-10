@@ -66,13 +66,7 @@ export const Fixed_button_div = styled.div`
   z-index: 10;
   position: absolute;
 `;
-export const Swiper_button = styled.button`
-  width: 19px;
-  height: 19px;
-  border: 1px solid #dfdfdf;
-  background: #fff;
-  cursor: pointer;
-`;
+
 export const Banner_image_div = styled.div`
   display: flex;
   justify-content: center;

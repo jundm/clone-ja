@@ -1,6 +1,10 @@
-import { Swiper_button } from "@components/TopSection/MainInfo/style";
 import { IconType } from "react-icons";
 import { useSwiper } from "swiper/react";
+import {
+  SwiperCustomButtonNext_div,
+  SwiperCustomButtonPrev_div,
+  Swiper_button,
+} from "./style";
 
 export const SwiperButtonNext: IconType = ({ children }) => {
   const swiper = useSwiper();
@@ -13,7 +17,7 @@ export const SwiperButtonNext: IconType = ({ children }) => {
         background: "#fff",
         cursor: "pointer",
       }}
-      onClick={(e) => {
+      onClick={(e: { stopPropagation: () => void }) => {
         e.stopPropagation();
         swiper.slideNext();
       }}
@@ -32,7 +36,7 @@ export const SwiperButtonPrev: IconType = ({ children }) => {
         background: "#fff",
         cursor: "pointer",
       }}
-      onClick={(e) => {
+      onClick={(e: { stopPropagation: () => void }) => {
         e.stopPropagation();
         swiper.slidePrev();
       }}
@@ -45,13 +49,26 @@ export const SwiperButtonPrev: IconType = ({ children }) => {
 export const SwiperCustomButtonNext: IconType = ({ children }) => {
   const swiper = useSwiper();
   return (
-    <div
+    <SwiperCustomButtonNext_div
       onClick={(e) => {
         e.stopPropagation();
         swiper.slideNext();
       }}
     >
       {children}
-    </div>
+    </SwiperCustomButtonNext_div>
+  );
+};
+export const SwiperCustomButtonPrev: IconType = ({ children }) => {
+  const swiper = useSwiper();
+  return (
+    <SwiperCustomButtonPrev_div
+      onClick={(e) => {
+        e.stopPropagation();
+        swiper.slidePrev();
+      }}
+    >
+      {children}
+    </SwiperCustomButtonPrev_div>
   );
 };
