@@ -21,10 +21,15 @@ function TopAdvBnSection({}: TopAdvBnSectionProps) {
     <TopAdv_Bn_section style={{ position: "relative" }}>
       <Swiper
         slidesPerView={3}
+        spaceBetween={0}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         loop
-        style={{ position: "static", cursor: "pointer" }}
+        style={{
+          position: "static",
+          cursor: "pointer",
+          width: "1250px",
+        }}
       >
         <SwiperCustomButtonNext>
           <AiOutlineRight size={20} />

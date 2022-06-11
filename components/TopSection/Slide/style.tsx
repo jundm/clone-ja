@@ -2,9 +2,8 @@ import styled from "@emotion/styled";
 
 export const ContentTop_section = styled.section`
   padding: 55px 0;
-  overflow: hidden;
   width: 100%;
-
+  min-width: 1300px;
   background: linear-gradient(
     to right,
     rgba(173, 207, 255, 0.25) 0%,

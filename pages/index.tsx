@@ -4,7 +4,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
-import TopAdvBnSection from "@components/Header/TopAdvBnSection";
+import TopAdvBnSection from "@components/TopAdvBnSection";
+import HotKeyword from "@components/HotKeyword";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <HiddenMenu />
       <TopSection />
       <TopAdvBnSection />
+      <HotKeyword />
     </>
   );
 };
