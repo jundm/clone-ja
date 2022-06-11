@@ -3,13 +3,16 @@ import styled from "@emotion/styled";
 export const Hd_wrapper_div = styled.div`
   position: relative;
   width: 1250px;
-  line-height: 65px;
-  height: 75px;
+
+  /* height: 75px; */
+
   zoom: 1;
 `;
 export const Gnb_nav = styled.nav``;
 export const Gnb_wrap_div = styled.div`
   width: 100%;
+  height: 75px;
+  line-height: 65px;
   display: flex;
   justify-content: space-between;
 `;

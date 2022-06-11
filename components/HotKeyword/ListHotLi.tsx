@@ -39,7 +39,9 @@ function ListHotLi({
 }: ListHotLiProps) {
   return (
     <ListHot_li>
-      <ListHot_a href={link}>
+      <ListHot_a
+        href={link}
+      >
         <ImgBox_div background={background}>
           <ImgBox_Image className="img_image" src={image} alt="" />
           <Name_h3>{name_h3}</Name_h3>
