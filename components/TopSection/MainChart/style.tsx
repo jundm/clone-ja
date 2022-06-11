@@ -21,7 +21,7 @@ export const Chart_content_ul = styled.ul`
 `;
 export const Fixed_button_div = styled.div`
   transform: translate(160px, -275px);
-  z-index: 999;
+  z-index: 20;
   background: white;
   border: solid 1px white;
   position: absolute;
