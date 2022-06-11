@@ -38,22 +38,34 @@ function TopAdvBnSection({}: TopAdvBnSectionProps) {
           <AiOutlineLeft size={20} />
         </SwiperCustomButtonPrev>
         <SwiperSlide>
-          <Image src={one} alt="" />
+          <a href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=176">
+            <Image src={one} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={two} alt="" />
+          <a href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=170">
+            <Image src={two} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={three} alt="" />
+          <a href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=184">
+            <Image src={three} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={four} alt="" />
+          <a href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=182">
+            <Image src={four} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={five} alt="" />
+          <a href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=174">
+            <Image src={five} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={six} alt="" />
+          <a href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=183">
+            <Image src={six} alt="" />
+          </a>
         </SwiperSlide>
       </Swiper>
     </TopAdv_Bn_section>
