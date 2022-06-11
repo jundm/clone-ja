@@ -71,9 +71,6 @@ function MainChart({}: MainChartProps) {
               })}
             </Chart_content_ul>
           </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
         </Swiper>
       </Swiper_container_div>
     </MainChart_div>

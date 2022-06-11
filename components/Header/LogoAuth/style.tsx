@@ -118,19 +118,23 @@ export const Login_wr_ul = styled.ul`
 export const Login_wr_li = styled.li`
   margin-right: 20px;
 `;
-export const Menu_icon_span = styled.span`
+export const Menu_icon_span = styled.span<{ icons: string }>`
   text-indent: -9999px;
   height: 30px;
   display: block;
   color: #919191;
+  background: ${(props) => props.icons};
 `;
 
-export const Menu_icon_a = styled.a`
+export const Menu_icon_a = styled.a<{ hover: string }>`
   color: #919191;
   border-left: none;
   line-height: 1;
   text-align: center;
   :hover {
     color: #9c57f5;
+    span {
+      background: ${(props) => props.hover};
+    }
   }
 `;
