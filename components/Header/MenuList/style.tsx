@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 export const Hd_wrapper_div = styled.div`
   position: relative;
-  /* margin: 0 auto; */
   width: 1250px;
   line-height: 65px;
   height: 75px;
@@ -29,16 +28,19 @@ export const Gnb_1dul_li = styled.li`
   }
 `;
 export const Gnb_Info_li = styled(Gnb_1dul_li)`
+  cursor: pointer;
   :hover {
     background: url("assets/headers/links/gnbInfo.webp") no-repeat center 16px;
   }
 `;
 export const GnbTalk_li = styled(Gnb_1dul_li)`
+  cursor: pointer;
   :hover {
     background: url("assets/headers/links/gnbTalk.webp") no-repeat center 16px;
   }
 `;
 export const AI_image_li = styled(Gnb_1dul_li)`
+  cursor: pointer;
   background: url("assets/headers/links/ai.webp") no-repeat 20px 25px;
   :hover {
     background: url("assets/headers/links/ai_ov.webp") no-repeat 20px 0px;

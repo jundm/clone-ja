@@ -24,9 +24,6 @@ interface LogoAuthProps {}
 
 function LogoAuth({}: LogoAuthProps) {
   const [width, setWidth] = useState(400);
-  const [signup, setSignup] = useState(false);
-  const [login, setLogin] = useState(false);
-  const [company, setCompany] = useState(false);
 
   return (
     <>
@@ -68,19 +65,14 @@ function LogoAuth({}: LogoAuthProps) {
             <Login_wr_li>
               <Menu_icon_a
                 href="https://janet.co.kr/member/register.php"
-                onMouseEnter={() => {
-                  setSignup(true);
-                }}
-                onMouseLeave={() => {
-                  setSignup(false);
-                }}
+                hover={
+                  'url("assets/headers/auth/member_ov.webp") no-repeat 20px'
+                }
               >
                 <Menu_icon_span
-                  style={{
-                    background: `url('assets/headers/auth/${
-                      signup ? "member_ov.webp" : "member.webp"
-                    }') no-repeat center 3px`,
-                  }}
+                  icons={
+                    'url("assets/headers/auth/member.webp") no-repeat 20px'
+                  }
                 />
                 회원가입
               </Menu_icon_a>
@@ -88,19 +80,12 @@ function LogoAuth({}: LogoAuthProps) {
             <Login_wr_li>
               <Menu_icon_a
                 href="https://janet.co.kr/member/login"
-                onMouseEnter={() => {
-                  setLogin(true);
-                }}
-                onMouseLeave={() => {
-                  setLogin(false);
-                }}
+                hover={
+                  'url("assets/headers/auth/login_ov.webp") no-repeat 10px'
+                }
               >
                 <Menu_icon_span
-                  style={{
-                    background: `url('assets/headers/auth/${
-                      login ? "login_ov.webp" : "login.webp"
-                    }') no-repeat center 3px`,
-                  }}
+                  icons={'url("assets/headers/auth/login.webp") no-repeat 10px'}
                 />
                 로그인
               </Menu_icon_a>
@@ -108,19 +93,14 @@ function LogoAuth({}: LogoAuthProps) {
             <Login_wr_li>
               <Menu_icon_a
                 href="https://support.janet.co.kr/"
-                onMouseEnter={() => {
-                  setCompany(true);
-                }}
-                onMouseLeave={() => {
-                  setCompany(false);
-                }}
+                hover={
+                  'url("assets/headers/auth/company_ov.webp") no-repeat 25px'
+                }
               >
                 <Menu_icon_span
-                  style={{
-                    background: `url('assets/headers/auth/${
-                      company ? "company_ov.webp" : "company.webp"
-                    }') no-repeat center 3px`,
-                  }}
+                  icons={
+                    'url("assets/headers/auth/company.webp") no-repeat 25px'
+                  }
                 />
                 기업서비스
               </Menu_icon_a>
