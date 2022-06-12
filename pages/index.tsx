@@ -11,6 +11,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>자격증넷 | 자넷 누구나, 언제든 자격증이 궁금할땐?</title>
+        <link rel="icon" href="/assets/headers/logo/favicon-32x32.png" />
       </Head>
       <Header />
       <HiddenMenu />
