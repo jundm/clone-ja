@@ -1,5 +1,6 @@
 # clone-janet
-<img width="1270" alt="전체사진" src="https://user-images.githubusercontent.com/80582578/173233473-29c3ec4c-82ab-4842-9e77-29f6576e6e59.png">
+<img width="1260" alt="전체사진" src="https://user-images.githubusercontent.com/80582578/173243168-733fd656-897f-4025-8077-27e0f32fc28e.png">
+
 
 ### 클론코딩과제
 
