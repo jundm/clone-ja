@@ -25,7 +25,6 @@ function Slide({}: SlideProps) {
           onSlideChange={(swiper) => {
             setRealIndex(swiper.realIndex);
           }}
-          onSwiper={(swiper) => console.log(swiper, "swiper")}
           loop
           autoplay={{ delay: 3000 }}
         >

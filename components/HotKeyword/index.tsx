@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { HotKeyword_section, ListHot_ul, Purple_span, Tit_h1 } from "./style";
 import ListHotLi from "./ListHotLi";
 import axios from "axios";
-import { StaticImageData } from "next/image";
 
 interface HotKeywordProps {}
 interface ListHotProps {
@@ -97,7 +96,6 @@ function HotKeyword({}: HotKeywordProps) {
     });
   }, []);
 
-  console.log(keywords, "keywords");
   return (
     <HotKeyword_section>
       <Tit_h1>

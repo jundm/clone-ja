@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import React from "react";
 import {
   Date_span,
@@ -49,7 +48,6 @@ function ListHotLi({
   const now = dayjs();
   let expired_at = dayjs(esRegdt).add(1, "d");
   let D_day = expired_at.diff(now, "day", false);
-  console.log(expired_at, "now");
   return (
     <ListHot_li>
       <ListHot_a href={link}>

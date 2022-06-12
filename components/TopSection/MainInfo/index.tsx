@@ -2,15 +2,7 @@ import React from "react";
 import {
   Banner_image_div,
   Fixed_button_div,
-  Info_div,
-  Info_li,
-  Info_ul,
   MainInfo_div,
-  Thum_span,
-  Tit_h1,
-  Txt_box_div,
-  Txt_box_h3,
-  Txt_box_p,
 } from "./style";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
