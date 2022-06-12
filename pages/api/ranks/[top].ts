@@ -6,7 +6,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
     const { top } = req.query;
 
-    console.log(top, "top");
     const data = sampleData.find((data) => data.id === parseInt(top as string));
     res.status(200).json(data);
   } catch (e: any) {

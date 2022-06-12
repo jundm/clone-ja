@@ -22,8 +22,7 @@ function TopAdvBnSection({}: TopAdvBnSectionProps) {
       <Swiper
         slidesPerView={3}
         spaceBetween={0}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+
         loop
         style={{
           position: "static",
