@@ -47,9 +47,9 @@ function ListHotLi({
   //! image 에러때문에둠옮겨둠
   const items = [one, two, three, four, five, six, seven, eight];
   const now = dayjs();
-  let expired_at = dayjs(esRegdt);
+  let expired_at = dayjs(esRegdt).add(1, "d");
   let D_day = expired_at.diff(now, "day", false);
-
+  console.log(expired_at, "now");
   return (
     <ListHot_li>
       <ListHot_a href={link}>
