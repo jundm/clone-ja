@@ -12,8 +12,9 @@ import {
 
 interface HiddenMenuProps {}
 
+//*! NOT REFECTORY */
 function HiddenMenu({}: HiddenMenuProps) {
-  const [value,] = useAtom(heightAtom);
+  const [value] = useAtom(heightAtom);
   return (
     <Gnb_all_div toggle={value.toggle}>
       <Gnb_al_ul>
