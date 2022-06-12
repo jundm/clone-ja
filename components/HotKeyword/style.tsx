@@ -5,6 +5,7 @@ export const HotKeyword_section = styled.section`
   margin-bottom: 10px;
   width: 1307px;
   margin: 0 auto;
+  height: 700px;
 `;
 export const Purple_span = styled.span`
   color: #8f45ef;
@@ -21,10 +22,11 @@ export const Tit_h1 = styled.h1`
   font-weight: 400;
 `;
 export const ListHot_ul = styled.ul`
-  min-height: 1030px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 `;
 export const ListHot_li = styled.li`
-  float: left;
+  /* float: left; */
   margin: 0 16.666666px 16px 0;
   width: 300px;
   height: 190px;

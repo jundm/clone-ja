@@ -20,7 +20,7 @@ export const Tit_h1 = styled.h1`
   margin-left: 10px;
 `;
 export const Info_ul = styled.ul`
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0px 10px;
 `;
 export const Info_li = styled.li`
@@ -29,9 +29,21 @@ export const Info_li = styled.li`
   float: left;
   display: table;
 `;
+export const Info3_li = styled.li`
+  padding: 10px 20px;
+  width: 33.333333%;
+  float: left;
+  display: table;
+  text-align: center;
+`;
 export const Thum_span = styled.span`
   width: 90px;
   display: table-cell;
+`;
+export const Thum3_span = styled.span`
+  width: 90px;
+  display: block;
+  margin: 0 auto 10px;
 `;
 export const Txt_box_div = styled.div`
   width: 95px;
@@ -46,9 +58,18 @@ export const Txt_box_h3 = styled.h3`
   padding: 0;
   border: 0;
   font-size: 14.04px;
+  word-break: keep-all;
 `;
 export const Txt_box_p = styled.p`
   font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  word-break: keep-all;
+`;
+export const Txt_box3_p = styled.p`
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  width: 100px;
   margin: 0;
   padding: 0;
   font-size: 12px;

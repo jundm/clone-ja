@@ -22,14 +22,11 @@ function MainChart({}: MainChartProps) {
       setRank(ranked.data);
     });
   }, []);
-  console.log(rank, "data");
 
   return (
     <MainChart_div>
       <Swiper_container_div>
         <Swiper
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
           style={{
             margin: "0 auto",
             zIndex: "1",

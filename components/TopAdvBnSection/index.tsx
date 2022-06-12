@@ -15,7 +15,7 @@ import six from "public/assets/banners/body_banners/MainBn_scroll_06.webp";
 import Image from "next/image";
 
 interface TopAdvBnSectionProps {}
-
+//! NOT REFECTORY
 function TopAdvBnSection({}: TopAdvBnSectionProps) {
   return (
     <TopAdv_Bn_section style={{ position: "relative" }}>
