@@ -81,7 +81,7 @@ export const Info_div = styled.div`
   z-index: -1;
 `;
 export const Fixed_button_div = styled.div`
-  transform: translate(450px, -240px);
+  transform: translate(450px, -245px);
   background: white;
   border: solid 1px white;
   z-index: 10;

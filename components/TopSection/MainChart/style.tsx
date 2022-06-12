@@ -20,7 +20,7 @@ export const Chart_content_ul = styled.ul`
   padding: 10px 0;
 `;
 export const Fixed_button_div = styled.div`
-  transform: translate(160px, -275px);
+  transform: translate(160px, -325px);
   z-index: 20;
   background: white;
   border: solid 1px white;
@@ -38,6 +38,7 @@ export const Hot_item_li = styled.li<{ number: number }>`
   }
 `;
 export const Hot_item_id_span = styled.span`
+  margin-left: 5px;
   font-size: 1.05em;
   line-height: 25px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
