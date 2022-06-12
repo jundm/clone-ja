@@ -36,7 +36,11 @@ function Infomation({
   txt_box_h3,
   txt_box_p,
 }: InfomationProps) {
-  console.log(link, "link");
+  const alertMessage = (link: string) => {
+    if (link === "") {
+      alert("준비중입니다.");
+    }
+  };
 
   return (
     <>
@@ -47,8 +51,11 @@ function Infomation({
         {link.map((data, index) => {
           if (link.length === 4) {
             return (
-              <Info_li key={index}>
-                <a href={data}>
+              <Info_li key={index} onClick={() => alertMessage(data)}>
+                <a
+                  href={data !== "" ? data : undefined}
+                  style={{ cursor: "pointer" }}
+                >
                   <Thum_span>
                     <Image src={image[index]} alt="" />
                   </Thum_span>
