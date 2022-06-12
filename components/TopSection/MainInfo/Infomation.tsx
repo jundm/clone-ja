@@ -9,6 +9,9 @@ import {
   Txt_box_h3,
   Txt_box_p,
   Info_ul,
+  Info3_li,
+  Thum3_span,
+  Txt_box3_p,
 } from "./style";
 
 interface InfomationProps {
@@ -42,19 +45,35 @@ function Infomation({
       </Info_div>
       <Info_ul>
         {link.map((data, index) => {
-          return (
-            <Info_li key={index}>
-              <a href={data}>
-                <Thum_span>
-                  <Image src={image[index]} alt="" />
-                </Thum_span>
-                <Txt_box_div>
-                  <Txt_box_h3>{txt_box_h3[index]}</Txt_box_h3>
-                  <Txt_box_p>{txt_box_p[index]}</Txt_box_p>
-                </Txt_box_div>
-              </a>
-            </Info_li>
-          );
+          if (link.length === 4) {
+            return (
+              <Info_li key={index}>
+                <a href={data}>
+                  <Thum_span>
+                    <Image src={image[index]} alt="" />
+                  </Thum_span>
+                  <Txt_box_div>
+                    <Txt_box_h3>{txt_box_h3[index]}</Txt_box_h3>
+                    <Txt_box_p>{txt_box_p[index]}</Txt_box_p>
+                  </Txt_box_div>
+                </a>
+              </Info_li>
+            );
+          } else {
+            return (
+              <Info3_li key={index}>
+                <a href={data}>
+                  <Thum3_span>
+                    <Image src={image[index]} alt="" />
+                  </Thum3_span>
+                  <Txt_box_div>
+                    <Txt_box_h3>{txt_box_h3[index]}</Txt_box_h3>
+                    <Txt_box3_p>{txt_box_p[index]}</Txt_box3_p>
+                  </Txt_box_div>
+                </a>
+              </Info3_li>
+            );
+          }
         })}
       </Info_ul>
     </>
