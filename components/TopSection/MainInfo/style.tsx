@@ -20,7 +20,7 @@ export const Tit_h1 = styled.h1`
   margin-left: 10px;
 `;
 export const Info_ul = styled.ul`
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0px 10px;
 `;
 export const Info_li = styled.li`
